@@ -5,6 +5,10 @@ client/ios/
 *.import
 *.translation
 
+# Logi serwera
+server/server.log
+server/server.log.err
+
 # Python
 __pycache__/
 *.pyc
