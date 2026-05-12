@@ -1,0 +1,15 @@
+2026-05-12 14:15:53,099 [INFO] \u0141\u0105czenie z PostgreSQL...
+2026-05-12 14:15:53,396 [INFO] Baza danych zainicjalizowana.
+2026-05-12 14:15:53,397 [INFO] PostgreSQL: po\u0142\u0105czono.
+2026-05-12 14:15:53,398 [INFO] Serwer MMO startuje na ws://0.0.0.0:9999
+2026-05-12 14:15:53,399 [INFO] server listening on 0.0.0.0:9999
+2026-05-12 14:16:38,192 [INFO] connection open
+2026-05-12 14:16:38,194 [INFO] Nowe po\u0142\u0105czenie: 2a8aa651 z ('77.174.247.177', 53942)
+2026-05-12 14:16:38,215 [INFO] Gracz do\u0142\u0105czy\u0142: vfcv (2a8aa651) @ 400.0,300.0
+2026-05-12 14:16:49,324 [INFO] connection open
+2026-05-12 14:16:49,326 [INFO] Nowe po\u0142\u0105czenie: 3bff244d z ('77.174.247.177', 65245)
+2026-05-12 14:16:49,358 [INFO] Gracz do\u0142\u0105czy\u0142: asdsad (3bff244d) @ 400.0,300.0
+2026-05-12 14:17:18,545 [INFO] [CZAT] vfcv: elooooo
+2026-05-12 14:17:21,623 [INFO] [CZAT] asdsad: nida
+2026-05-12 14:17:53,478 [INFO] Roz\u0142\u0105czono: 3bff244d (1006)
+2026-05-12 14:17:53,481 [INFO] Gracz opu\u015bci\u0142 gr\u0119: asdsad (3bff244d)

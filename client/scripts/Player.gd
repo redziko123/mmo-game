@@ -28,7 +28,6 @@ func _ready() -> void:
 
 func setup(pid: String, pname: String, _color: Color, pos: Vector2, local: bool) -> void:
 	player_id = pid
-
 	player_name = pname
 	position = pos
 	_target_position = pos
@@ -37,6 +36,10 @@ func setup(pid: String, pname: String, _color: Color, pos: Vector2, local: bool)
 		_label.text = pname
 	if _anim:
 		_anim.play("idle_down")
+	# Gracze przenikaja przez siebie – kazdy gracz ma swoja warstwe kolizji
+	# warstwa 1 = swiat (sciany, podloga), warstwa 2 = gracze
+	collision_layer = 2 # gracz jest NA warstwie 2
+	collision_mask = 1 # gracz wykrywa tylko warstwe 1 (swiat), NIE innych graczy
 
 
 func _physics_process(delta: float) -> void:
