@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Serwer MMO",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/server/server.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

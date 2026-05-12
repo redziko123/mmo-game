@@ -1,0 +1,26 @@
+# Godot
+client/.godot/
+client/android/
+client/ios/
+*.import
+*.translation
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+server/__pycache__/
+
+# Środowisko
+.env
+*.env
+
+# VS Code
+.vscode/settings.json
+
+# Wygenerowane pliki pomocnicze
+assets/nyc_preview.png
+assets/tileset_preview.png
+gen_*.py
+fix_*.py
+check_*.py
