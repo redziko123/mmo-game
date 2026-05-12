@@ -194,6 +194,8 @@ async def handle_client(ws: ServerConnection):
                     continue
                 x = float(msg.get("x", 0))
                 y = float(msg.get("y", 0))
+                dir    = str(msg.get("dir", "down"))
+                moving = bool(msg.get("moving", False))
                 players[player_id]["x"] = x
                 players[player_id]["y"] = y
 
@@ -202,6 +204,8 @@ async def handle_client(ws: ServerConnection):
                     "player_id": player_id,
                     "x": x,
                     "y": y,
+                    "dir": dir,
+                    "moving": moving,
                 }, exclude_id=player_id)
 
             # --- Wiadomość czatu ---

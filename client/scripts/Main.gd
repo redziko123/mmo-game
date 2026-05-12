@@ -99,7 +99,9 @@ func _on_message(data: Dictionary) -> void:
 			if pid in _player_nodes:
 				_player_nodes[pid].set_remote_position(
 					float(data.get("x", 0)),
-					float(data.get("y", 0))
+					float(data.get("y", 0)),
+					data.get("dir", ""),
+					bool(data.get("moving", false))
 				)
 
 		"chat":

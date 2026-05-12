@@ -76,14 +76,21 @@ func _handle_local_movement(_delta: float) -> void:
 	else:
 		_anim.play("idle_" + _last_dir)
 
-	# Wyślij pozycję do serwera
-	if velocity != Vector2.ZERO:
-		NetworkManager.send({
-			"type": "move",
-			"x": position.x,
-			"y": position.y,
-		})
+	# Wyślij pozycję i animację do serwera
+	NetworkManager.send({
+		"type": "move",
+		"x": position.x,
+		"y": position.y,
+		"dir": _last_dir,
+		"moving": velocity != Vector2.ZERO,
+	})
 
 
-func set_remote_position(x: float, y: float) -> void:
+func set_remote_position(x: float, y: float, dir: String = "", moving: bool = false) -> void:
 	_target_position = Vector2(x, y)
+	if dir != "":
+		_last_dir = dir
+	if moving:
+		_anim.play("walk_" + _last_dir)
+	else:
+		_anim.play("idle_" + _last_dir)
